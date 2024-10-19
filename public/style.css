@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+/* home-page */
+
+.home{
+    height: 150vh;
+    width: 100%;
+    background-image: url(/public/coverphoto.jpg);
+    background-size: 100vw 145vh;
+    background-repeat: no-repeat;
+}
+
+header{
+    height: 15%;
+    width: 100%;
+}
+
+.logo{
+    height: 140px; 
+    width: 240px;
+    position: absolute;
+    top: 10px;
+    left: 50px;
+}
+
+header li{
+    list-style: none;
+    font-size: larger;
+    font-weight: 600;
+    position: absolute;
+    top: 65px;
+    right: 100px;
+    display: flex;
+    gap: 100px;
+}
+
+header li a{
+    color: rgba(0, 0, 0, 0.952);
+    text-decoration: none;
+}
+
+main{
+    height: 80%;
+    width: 100%;
+}
+
+.intro{
+    position: absolute;
+    top: 500px;
+    left: 50px;
+    font-size: 20px;
+    font-weight: 1000;
+    color: white;
+}
+
+footer{
+    height: 6%;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(19, 17, 17);
+    box-shadow: 0 -20px 30px 20px rgb(19, 17, 17);
+}
+
+/* Articles */
+.content{
+    height: 170vh;
+    width: 100%;
+    /* padding-top: 100px; */
+}
+
+.carr1{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon4{
+    width: 35px;
+    height: 35px;
+    border: 1px solid rgba(224, 12, 12, 0.349);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: x-large;
+    background-color: white;
+    transition: all 0.3s ease-out;
+    margin: 20px;
+}
+
+#left{
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    z-index: 99;
+}
+
+#right{
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    z-index: 99;
+}
+
+.icon4:hover{
+    color: rgba(250, 235, 215, 0.637);
+    background-color: #db52406c;
+}
+
+.boxes{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-auto-flow: column;
+    scroll-snap-type: inline mandatory;
+    overflow-x: hidden;
+    overscroll-behavior-inline: contain;
+    padding: 0;
+}
+
+.boxes::-webkit-scrollbar{
+    -webkit-appearance: none;
+}
+
+.boxes > * {
+    scroll-snap-align: start;
+}
+
+.boxes img{
+    height: 100vh;
+    width: 100vw;
+    /* border: none; */
+}
+
+.vids{
+    height: 100vh;
+    width: 100vw;
+    /* object-fit: cover; */
+}
+
+/* About */
+
+
+
+/*Contact*/
+.contact{
+    height: 150vh;
+    width: 100vw;
+    background-color: aliceblue;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.form{
+    height: 500px;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 50px;
+}
+
+.input{
+    height: 500px;
+    width: 1000px;
+    border-radius: 10px;
+}

@@ -1,0 +1,13 @@
+This Is a blog site I want you to build with express and EJS.
+1. Have the pages highlighted in the navbar.
+2. Render the content in the pages dynamically with EJS Tags( Do  not write content manually in elements).
+3. Add another navLink in the navbar called Blog/News then from there let there be a anchor element saying add Blog,
+when clicked it takes you to a page with a form having a title, Details and image inputs and a button that when clicked
+ it uploads the data to be showcased in the blog page.
+4. CATCH: If possible you can try to implement firestore as your database and storage as your image database.
+5. Styling I would like you to implement You can style as mine or use yours if possible.
+6. Styling in public folder
+7. Middleware (app.use(express.static("public"));)
+8. firestore database for files
+9. Create get request for the pages that you have[eg. about, Contact]
+10. The route endpoints of the get request you have set,  set them to be the href attributes of the the navbar links

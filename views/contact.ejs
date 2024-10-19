@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/public/style.css">
+    <link rel="stylesheet" href="/public/animate.css">
+</head>
+<body class="contact">
+    <!--header-->
+    <%-include('partials/header.ejs')%>
+
+    <form action="/about" method="post" class="form">
+        <input type="text" name="fname" placeholder="Name" required>
+        <input type="text" name="lname" placeholder="Email Address" required>
+        <textarea class="input" name="message" placeholder="Message" required></textarea>
+        <input type="submit">
+    </form>
+
+    <!-- footer -->
+    <%- include('partials/footer.ejs')%>
+</body>
+</html>

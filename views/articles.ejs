@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/public/style.css">
+    <link rel="stylesheet" href="/public/animate.css">
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+    />
+</head>
+<body style="background-color: antiquewhite;">
+    <!--header-->
+    <%-include('partials/header.ejs')%>
+
+    <!--main content-->
+    <div class="content">
+        <div class="carr1">
+            <button class="icon4" id="left" onclick="scrolll()" ><i class="fa-solid fa-chevron-left" style="color: #e00c0c85;"></i></button>
+            <div class="boxes">
+
+                <div>
+                    <img src="/public/kikuyu town.jpg" alt="">
+                </div>
+                <div class="vids">
+                    <video autoplay muted loop>
+                        <source src="/public/KIKUYU TOWN DRONE View .mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div>
+                    <img src="/public/kikuyu old.jpg" alt="">
+                </div>
+                
+                <video class="vids" src="/public/ondiri view2.mp4" autoplay muted loop></video>
+                
+            </div>
+            <button class="icon4" id="right" onclick="scrollr()"><i class="fa-solid fa-chevron-right" style="color: #e00c0c85;"></i></button>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <%- include('partials/footer.ejs')%>
+
+    <script>
+        function scrolll(){
+            var left=document.querySelector(".boxes");
+            left.scrollBy(-1200,0)
+        }
+        function scrollr(){
+            var left=document.querySelector(".boxes");
+            left.scrollBy(1200,0)
+        }
+    </script>
+</body>
+</html>
