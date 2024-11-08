@@ -14,48 +14,32 @@
         referrerpolicy="no-referrer" 
     />
 </head>
-<body style="background-color: antiquewhite;">
+<body style="background-image: url(/public/pexels-fox-58267-212324.jpg); background-size:cover;">
     <!--header-->
     <%-include('partials/header.ejs')%>
 
     <!--main content-->
     <div class="content">
-        <div class="carr1">
-            <button class="icon4" id="left" onclick="scrolll()" ><i class="fa-solid fa-chevron-left" style="color: #e00c0c85;"></i></button>
-            <div class="boxes">
-
-                <div>
-                    <img src="/public/kikuyu town.jpg" alt="">
+        <li class="articles">
+            <a href="/droneview" class="droneview">
+                <img src="/public/kikuyu town.jpg" alt="">
+                <div class="dronedesc">
+                    <h3>Drone View</h3>
+                    <p>Aerial photography of the town</p>
                 </div>
-                <div class="vids">
-                    <video autoplay muted loop>
-                        <source src="/public/KIKUYU TOWN DRONE View .mp4" type="video/mp4">
-                    </video>
+            </a>
+            <a href="/wetland" class="droneview">
+                <img src="/public/wetland.jpg" alt="">
+                <div class="dronedesc">
+                    <h3>Wetland</h3>
+                    <p>The town's wetlands</p>
                 </div>
-
-                <div>
-                    <img src="/public/kikuyu old.jpg" alt="">
-                </div>
-                
-                <video class="vids" src="/public/ondiri view2.mp4" autoplay muted loop></video>
-                
-            </div>
-            <button class="icon4" id="right" onclick="scrollr()"><i class="fa-solid fa-chevron-right" style="color: #e00c0c85;"></i></button>
-        </div>
+            </a>
+            <a href="/oldtown">Oldtown</a>
+        </li>
     </div>
 
     <!-- footer -->
     <%- include('partials/footer.ejs')%>
-
-    <script>
-        function scrolll(){
-            var left=document.querySelector(".boxes");
-            left.scrollBy(-1200,0)
-        }
-        function scrollr(){
-            var left=document.querySelector(".boxes");
-            left.scrollBy(1200,0)
-        }
-    </script>
 </body>
 </html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/public/style.css">
+    <link rel="stylesheet" href="/public/animate.css">
+</head>
+<body>
+    <!--header-->
+    <%-include('partials/header.ejs')%>
+
+    <!--main content-->
+    <div class="page1">
+        <div class="vids">
+            <video id="myVideo" autoplay muted loop>
+                <source src="/public/KIKUYU TOWN DRONE View .mp4" type="video/mp4">
+            </video>
+            <p class="dronei">Kikuyu town drone view</p>
+        </div>    
+    </div>
+    <!-- footer -->
+    <%- include('partials/footer.ejs')%>
+
+</body>
+</html>

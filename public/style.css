@@ -8,24 +8,34 @@
 /* home-page */
 
 .home{
-    height: 150vh;
+    height: 105vh;
     width: 100%;
-    background-image: url(/public/coverphoto.jpg);
-    background-size: 100vw 145vh;
+    background-image: url(/public/kikuyu\ town.jpg);
+    background-size: 100vw 100vh;
     background-repeat: no-repeat;
 }
 
 header{
     height: 15%;
     width: 100%;
+    /* z-index: 120; */
 }
 
 .logo{
     height: 140px; 
     width: 240px;
     position: absolute;
-    top: 10px;
+    top: 65px;
     left: 50px;
+    font-size: x-large;
+    color: rgba(0, 0, 0, 0.952);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+}
+
+.logo:hover{
+    transform: translateY(-5%);
 }
 
 header li{
@@ -42,6 +52,11 @@ header li{
 header li a{
     color: rgba(0, 0, 0, 0.952);
     text-decoration: none;
+    transition: 0.1s ease-in-out;
+}
+
+header li a:hover{
+    transform: translateY(-15%);
 }
 
 main{
@@ -51,11 +66,18 @@ main{
 
 .intro{
     position: absolute;
-    top: 500px;
-    left: 50px;
-    font-size: 20px;
+    top: 280px;
+    left: 230px;
+    font-size: 70px;
     font-weight: 1000;
-    color: white;
+    color: transparent;
+    background-color: #2f8d46;
+    background-image: url(/public/Kenyan\ Flag.bmp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation:3s ease-out 1 zoomIn;
 }
 
 footer{
@@ -71,79 +93,48 @@ footer{
 
 /* Articles */
 .content{
-    height: 170vh;
+    height: 120vh;
     width: 100%;
-    /* padding-top: 100px; */
 }
 
-.carr1{
-    height: 100vh;
-    width: 100%;
+.articles{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 150px;
+    left: 80px;
+    gap: 50px;
 }
 
-.icon4{
-    width: 35px;
-    height: 35px;
-    border: 1px solid rgba(224, 12, 12, 0.349);
-    border-radius: 50%;
+.articles a{
+    height: 140px;
+    width: 900px;
+    text-decoration: none;
+    border: 2px solid rgba(0, 0, 0, 0.438);
+    border-radius: 10px;
     cursor: pointer;
-    font-size: x-large;
-    background-color: white;
-    transition: all 0.3s ease-out;
-    margin: 20px;
+    transition: 0.3s linear;
 }
 
-#left{
-    position: absolute;
-    top: 50%;
-    left: 40px;
-    z-index: 99;
+.articles a:hover{
+    transform: scale(1.1);
 }
 
-#right{
-    position: absolute;
-    top: 50%;
-    right: 40px;
-    z-index: 99;
+.droneview{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
 }
 
-.icon4:hover{
-    color: rgba(250, 235, 215, 0.637);
-    background-color: #db52406c;
+.droneview img{
+    height: 100px;
+    width: 200px;
+    border-radius: 10px;
 }
 
-.boxes{
-    height: 100vh;
-    width: 100vw;
-    display: grid;
-    grid-auto-flow: column;
-    scroll-snap-type: inline mandatory;
-    overflow-x: hidden;
-    overscroll-behavior-inline: contain;
-    padding: 0;
-}
-
-.boxes::-webkit-scrollbar{
-    -webkit-appearance: none;
-}
-
-.boxes > * {
-    scroll-snap-align: start;
-}
-
-.boxes img{
-    height: 100vh;
-    width: 100vw;
-    /* border: none; */
-}
-
-.vids{
-    height: 100vh;
-    width: 100vw;
-    /* object-fit: cover; */
+.dronedesc{
+    margin-left: 10px;
+    color: white;
 }
 
 /* About */
@@ -175,4 +166,54 @@ footer{
     height: 500px;
     width: 1000px;
     border-radius: 10px;
+}
+
+/* Page 1 */
+.page1{
+    height: 150vh;
+    width: 100%;
+}
+
+.vids{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: hidden;
+    z-index: -1;
+}
+
+#myVideo {
+ /* Make video to at least 100% wide and tall */
+    min-width: 100%; 
+    min-height: 100%; 
+
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+    width: auto;
+    height: auto;
+
+  /* Center the video */
+    position: absolute;
+    top: 50%;   
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.dronei{
+    position: absolute;
+    top: 380px;
+    left: 130px;
+    font-size: 50px;
+    font-weight: 1000;
+    z-index: 5;
+    color: white;
+    animation: 3s ease-out 1 slideIn;
+}
+
+/* Page 2 */
+
+.page2{
+    height: 150vh;
+    width: 100%;
 }
