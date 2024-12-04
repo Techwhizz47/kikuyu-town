@@ -93,27 +93,31 @@ footer{
 
 /* Articles */
 .content{
-    height: 120vh;
+    height: 150vh;
     width: 100%;
 }
 
 .articles{
+    width: 90%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     position: absolute;
-    top: 150px;
+    top: 180px;
     left: 80px;
     gap: 50px;
+    animation:1.5s ease-out 1 zoomIn;
 }
 
 .articles a{
-    height: 140px;
-    width: 900px;
+    height: 230px;
+    width: 350px;
     text-decoration: none;
     border: 2px solid rgba(0, 0, 0, 0.438);
     border-radius: 10px;
     cursor: pointer;
     transition: 0.3s linear;
+    background-color: rgba(48, 43, 43, 0.288);
 }
 
 .articles a:hover{
@@ -122,13 +126,13 @@ footer{
 
 .droneview{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding: 15px;
 }
 
 .droneview img{
-    height: 100px;
-    width: 200px;
+    height: 150px;
+    width: 315px;
     border-radius: 10px;
 }
 
@@ -138,14 +142,18 @@ footer{
 }
 
 /* About */
-
+.about{
+    height: 150vh;
+    width: 100%;
+    background-color: rgba(111, 133, 14, 0.527);
+}
 
 
 /*Contact*/
 .contact{
     height: 150vh;
     width: 100vw;
-    background-color: aliceblue;
+    background-color: rgba(111, 133, 14, 0.527);
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
